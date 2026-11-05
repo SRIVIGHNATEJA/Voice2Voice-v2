@@ -1,0 +1,32 @@
+# Virtual environments
+venv/
+.env
+
+# Logs & outputs
+evaluation_log.json
+latest_translation.txt
+*.wav
+*.log
+*.mp3
+*.jsonl
+
+# Documentation exclusions (allow repository docs)
+*.md
+!README.md
+!setup/README.md
+
+# Model artifacts (multi-gigabyte binaries ignored, preserve checkpoint dir)
+*.pt
+*.bin
+*.safetensors
+!models/checkpoints/.gitkeep
+
+# Cache & IDE
+__pycache__/
+.cache/
+.DS_Store
+.vscode/
+
+# Local Temporary Backups
+.backup_pre_cleanup/
+.backup_pre_hardening/
